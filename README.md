@@ -25,6 +25,8 @@ proyecto_banco/
 │       ├── Anotations.ts # Pasos Gherkin (GIVEN / WHEN / THEN / AND) como anotaciones del reporte
 │       └── Helpers.ts    # Textos esperados y datos de prueba
 ├── tests/                # Casos de prueba (*.spec.ts)
+├── docs/                 # Matriz de casos de prueba (CASOS_DE_PRUEBA.md y Casos_de_Prueba.xlsx)
+├── .github/workflows/    # Pipeline de GitHub Actions que ejecuta las pruebas en cada push
 ├── playwright.config.ts  # Configuración: URL base, navegadores, reportes, capturas y videos
 └── package.json
 ```
@@ -78,6 +80,9 @@ npx playwright install chromium
 | HU-04-CP-01 | Sucursal Virtual | El enlace dirige al portal de autenticación por HTTPS | Seguridad |
 
 **Total:** 10 escenarios / 27 ejecuciones.
+
+📄 La matriz completa de casos de prueba (historias de usuario, datos, resultados esperados, técnica y estado) está en
+[docs/CASOS_DE_PRUEBA.md](docs/CASOS_DE_PRUEBA.md) y en Excel en [docs/Casos_de_Prueba.xlsx](docs/Casos_de_Prueba.xlsx).
 
 | Campo del simulador | Mínimo válido | Máximo válido | Inválidos probados |
 |---|---|---|---|
